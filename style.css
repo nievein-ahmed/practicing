@@ -3,7 +3,9 @@
   padding: 0;
 }
 body {
-  background-image: radial-gradient(red 2%, yellow 20%, palegreen 40%);
+  background-image: url(./gallery/heart1.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
 .title img {
@@ -21,14 +23,15 @@ body {
 .title img {
   width: 300px;
   opacity: 0.5;
-  -webkit-box-reflect: below 20px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  -webkit-box-reflect: left 20px
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 
 .title {
   text-align: center;
   padding: 50px 60px;
   position: relative;
+  width: 110vw;
 }
 .title img {
   width: 30%;
@@ -37,6 +40,7 @@ body {
   position: absolute;
   left: 1000px;
   top: 400px;
+  height: 63vh;
 }
 
 .topleft {
@@ -59,6 +63,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 25px;
+  padding-right: 20px;
 }
 
 .overlay {
@@ -130,7 +135,7 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 .article {
-  column-count: 3;
+  column-count: 1;
   top: 50px;
   position: absolute;
   column-gap: 40px;
@@ -138,6 +143,30 @@ body {
   column-rule-width: 1px;
   column-rule-color: aqua;
   padding: 90px;
+}
+h4 {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgb(190, 17, 196);
+}
+h3 {
+  bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: 2px 2px 5px rgb(190, 17, 196);
+}
+.anime {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 300px;
 }
 .anime h4 {
   width: 10%;
